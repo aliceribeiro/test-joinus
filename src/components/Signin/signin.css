@@ -1,0 +1,74 @@
+#signin {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin-content {
+  width: 370px;
+  height: 440px;
+  background-color: #323232;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.56);
+
+}
+
+.signin-content_logo {
+  height: 150px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  width: 175px;
+  height: 90px;
+  margin: 5% 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+h4 {
+  color: #7E7E8B;
+  font-weight: 700;
+  text-align: center;
+}
+
+.input-login {
+  height: 50px;
+  width: 100%;
+  border: 1px solid #7E7E8B;
+  border-radius: 10px;
+  margin: 20px 0 0 0;
+  padding-left: 12px;
+  color: #7E7E8B;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+}
+
+.btn-signin {
+  height: 60px;
+  color: #F7F7F7;
+  background-color: #7AC64F;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 0px 0px 10px 10px;
+  transition: background-color 0.2s;
+}
+
+.btn-signin:hover {
+  color: #F7F7F7;
+  text-decoration: none;
+  background-color: #5C9C38;
+}
+
+@media screen and (max-width: 375px) {
+  .signin-content {
+    margin: 0 10%;
+  }
+}
