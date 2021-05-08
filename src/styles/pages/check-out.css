@@ -1,0 +1,29 @@
+.checkout-card {
+  width: 885px;
+  height: 515px;
+  background-color: #323232;
+  border-radius: 10px;
+  filter: drop-shadow(4px 5px 4px rgba(0, 0, 0, 0.25));
+}
+
+.checkout-card_content {
+  width: 300px;
+}
+
+.checkout-card_header h4 {
+  color: #F7F7F7;
+}
+
+.btn-back {
+  width: 260px;
+  height: 40px;
+  background-color: #7AC64F;
+  color: #F7F7F7;
+  text-align: center;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+}
+
+.btn-back:hover {
+  background-color: #5C9C38;
+}
