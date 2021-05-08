@@ -1,0 +1,26 @@
+#search-navbar {
+  background-color: #323232;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-logo {
+  width: 88px;
+  height: 44px;
+  margin: 15px 0;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-bar_icon {
+  width: 50px;
+  background-color: #E6E6E7;
+  border-radius: 10px 0 0 10px;
+}
+
+.search-bar_input {
+  background-color: #E6E6E7;
+  border-radius: 0 10px 10px 0;
+  border: none;
+}
