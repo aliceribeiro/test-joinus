@@ -1,0 +1,41 @@
+#detail {
+  width: 90%;
+  background: #323232;
+  border-radius: 10px;
+  filter: drop-shadow(4px 5px 4px rgba(0, 0, 0, 0.25));
+}
+
+.detail_text {
+  color: #f7f7f7;
+}
+
+.detail_btn-size {
+  width: 80px;
+  height: 50px;
+  color: #282c30;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.detail_btn-size:hover {
+  background-color: #7ac64f;
+}
+
+.detail_btn-size:focus {
+  background-color: #7ac64f;
+}
+
+.detail_btn-buy {
+  width: 100%;
+  height: 70px;
+  background-color: #7ac64f;
+  color: #f7f7f7;
+  text-align: center;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+}
+
+.detail_btn-buy:hover {
+  background-color: #5c9c38;
+}

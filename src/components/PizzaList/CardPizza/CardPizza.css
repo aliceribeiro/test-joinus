@@ -1,0 +1,17 @@
+.card-pizza {
+  width: 90%;
+  margin: 20px;
+  background-color: #323232;
+  border-radius: 10px;
+  filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.25));
+  transition: 0.2s;
+  color: #f7f7f7;
+}
+
+.card-pizza:hover {
+  border: 1px solid #5c9c38;
+}
+
+.card-pizza_image {
+  border-radius: 10px 10px 0 0;
+}
