@@ -1,7 +1,8 @@
 import axiosInstance from "../models/axiosInstance";
-
 class ApiService {
+  
   constructor() {
+    this.pizzas = []
     this.paths = {
       SIGN_IN: "/v1/signin",
       LIST_PIZZAS: "/v1/pizza",
@@ -24,22 +25,38 @@ class ApiService {
   // TODO adicionar tipo do retorno do listPizzas
   /**
    * @typedef {Object} ListPizzasReturn
-   *
-   * @param {String} id id from listing page
-   * @param {String} name name from listing page
-   * @param {String} imageUrl imageUrl from listing page
-   * @param {String} rating rating from listing page
-   * @param {String} priceP priceP from listing page
-   * @param {String} priceM priceM from listing page
-   * @param {String} priceG priceG from listing page
-   * @returns {Promise<import('axios').AxiosResponse<ListPizzasReturn>>}
+   * @property {String} id id from listing page
+   * @property {String} name name from listing page
+   * @property {String} imageUrl imageUrl from listing page
+   * @property {String} rating rating from listing page
+   * @property {String} priceP priceP from listing page
+   * @property {String} priceM priceM from listing page
+   * @property {String} priceG priceG from listing page
+   * 
+   * @returns {ListPizzasReturn[]}
    */
-  listPizzas(token) {
-    return axiosInstance.get(this.paths.LIST_PIZZAS, {
-      headers: {
-        Authorization: "Bearer " + token,
-      },
-    });
+  async listPizzas() {
+    try {
+      if (!window.localStorage.getItem("token")) {
+        throw new Error('Token not found');
+      }
+      if (
+        Array.isArray(this.pizzas) &&
+        this.pizzas.length
+      ) {
+        return this.pizzas
+      }
+      this.pizzas = await axiosInstance.get(this.paths.LIST_PIZZAS, {
+        headers: {
+          Authorization: "Bearer " + window.localStorage.getItem("token"),
+        },
+      }).then(axiosResult => axiosResult.data);
+
+      return this.pizzas;
+    } catch (err) {
+      console.log(err);
+      throw err;
+    }
   }
 }
 
