@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+<h1 align="center"> 
+  <img src="https://ik.imagekit.io/aliceribeiro/logoxds-1-removebg_2_nP-qkWejS.png">
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center"> 
+  <img src="https://ik.imagekit.io/aliceribeiro/Desktop_e_mobile_WtiE2D_pQ.png">
 
-## Available Scripts
+  <a href="https://test-joinus.herokuapp.com/">Acessar demonstração</a>
+</div>
 
-In the project directory, you can run:
+# Indice
+- [Sobre](#-sobre)
+- [Tecnologias utilizadas](#-tecnologias-utilizadas)
+- [Como baixar o projeto](#-como-baixar-o-projeto)
 
-### `yarn start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 📑 Sobre
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Projeto desenvolvido para aplicação da vaga de **estágio front-end** da **[JoinUs](https://joinus.com.br/)**.
 
-### `yarn test`
+O desafio consiste em desenvolver um site para uma pizzaria onde há autenticação de usuário, listagem de pizzas e checkout.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Algumas *libs* e *frameworks* foram utilizados para o desenvolvimento da aplicação, como o **react-router-dom** para o controle de rotas, **axios** para a conexão com a base de dados e **bootstrap** para definir algumas estruturas bases das páginas (mais detalhes na seção sobre [tecnologias utilizadas](#-tecnologias-utilizadas)).
 
-### `yarn build`
+A arquitetura seguida foi baseada no artigo [5 React Architecture Best Practices for 2021](https://www.sitepoint.com/react-architecture-best-practices/), além do **prettier** para *code formatter*.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Tecnologias utilizadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O projeto foi desenvolvido utilizando as seguintes tecnologias
 
-### `yarn eject`
+- [ReactJS - v17.0.2](https://reactjs.org)
+- [Node - v14.16.0](https://nodejs.org/en/)
+- [React router - v5.2.0](https://reactrouter.com/)
+- [Axios - v0.21.1](https://github.com/axios/axios)
+- [Bootstrap - v4.6.0](https://github.com/axios/axios)
+- [Prettier](https://prettier.io/)
+- [Yarn - v1.22.4](https://yarnpkg.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📂 Como baixar o projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  # Clonar o repositório
+  $ git clone https://github.com/aliceribeiro/test-joinus
 
-## Learn More
+  # Entrar no diretório
+  $ cd test-joinus
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  # Instalar as dependências
+  $ yarn install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  # Iniciar o projeto
+  $ yarn start
+```
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+Desenvolvido por Alice Ribeiro ✌🏼
