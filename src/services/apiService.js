@@ -22,16 +22,15 @@ class ApiService {
     return axiosInstance.post(this.paths.SIGN_IN, { email, password });
   }
 
-  // TODO adicionar tipo do retorno do listPizzas
   /**
    * @typedef {Object} ListPizzasReturn
    * @property {String} id id from listing page
    * @property {String} name name from listing page
    * @property {String} imageUrl imageUrl from listing page
-   * @property {String} rating rating from listing page
-   * @property {String} priceP priceP from listing page
-   * @property {String} priceM priceM from listing page
-   * @property {String} priceG priceG from listing page
+   * @property {integer} rating rating from listing page
+   * @property {number} priceP priceP from listing page
+   * @property {number} priceM priceM from listing page
+   * @property {number} priceG priceG from listing page
    * 
    * @returns {ListPizzasReturn[]}
    */

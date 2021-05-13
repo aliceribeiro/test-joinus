@@ -16,16 +16,13 @@ const initialValue = {
 
 function PizzaDetail() {
   const [values, setValues] = useState(initialValue);
-
   const { id } = useParams();
-  console.log(id);
 
   useEffect(() => {
     if (id) {
       apiService.listPizzas().then((response) => {
         const pizza = response.find((p) => p.id === id);
         setValues(pizza);
-        console.log("pizza pizzadetail", pizza);
       });
     }
   }, [id, values]);

@@ -13,11 +13,12 @@ function PizzaList() {
   const history = useHistory();
 
   useEffect(() => {
-    apiService.listPizzas()
+    apiService
+      .listPizzas()
       .then((response) => {
-        console.log(response);
         setPizzas(response);
-      }).catch(err => {
+      })
+      .catch((err) => {
         if (axios.isAxiosError(err)) {
           console.log("AXIOS ERROR: ", err.toJSON());
         }
@@ -25,11 +26,10 @@ function PizzaList() {
       });
   }, [history]);
 
-
   return (
     <Fragment>
       <NavBar />
-      <UIContainer>        
+      <UIContainer>
         <List pizzas={pizzas} loading={!pizzas.length} />
       </UIContainer>
     </Fragment>
