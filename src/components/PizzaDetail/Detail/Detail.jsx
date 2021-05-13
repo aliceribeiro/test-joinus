@@ -24,7 +24,7 @@ function Detail({ values }) {
               />
             </div>
             <div className="col-md-6">
-              <div className="card-body pt-0 pr-0">
+              <div className="card-body pt-0 pr-0 mr-3">
                 <div className="mt-3 mb-3 text-center">
                   <h4 className="detail_text">{values.name}</h4>
                   <span className="text-muted">
