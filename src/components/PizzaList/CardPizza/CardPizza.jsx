@@ -17,7 +17,12 @@ function CardPizza({ pizza, rota }) {
             <span>&#11088; &#11088; &#11088; &#11088; &#11088;</span>
             <div className="d-flex justify-content-between mt-3">
               <p>a partir de:</p>
-              <p className="card-text">R$ {Number(pizza.priceP).toFixed(2)}</p>
+              <p className="card-text">
+                {new Intl.NumberFormat("pt-BR", {
+                  style: "currency",
+                  currency: "BRL",
+                }).format(pizza.priceP)}
+              </p>
             </div>
           </div>
         </div>
