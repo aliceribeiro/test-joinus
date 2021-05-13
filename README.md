@@ -6,6 +6,11 @@
   <img src="https://ik.imagekit.io/aliceribeiro/Desktop_e_mobile_WtiE2D_pQ.png">
 
   <a href="https://test-joinus.herokuapp.com/">Acessar demonstração</a>
+
+  <div>
+    <p>(usuário e senha default</p>
+    <p>usuário: user@xds.com.br // senha: 223344)</p>
+  </div>
 </div>
 
 # Indice
