@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 import "./Detail.css";
 import backImg from "../../../assets/arrow-back.svg";
 import UIContainer from "../../UI/Container/Container";
+import { useState } from "react";
 
 function Detail({ values }) {
+  const [price, setPrice] = useState(0);
+
   return (
     <UIContainer>
       <div id="detail" className="container mt-5">
@@ -46,18 +49,21 @@ function Detail({ values }) {
                     role="group"
                   >
                     <button
+                      onClick={() => setPrice(values.priceP)}
                       type="button"
-                      className="btn-secondary detail_btn-size mr-3"
+                      className="btn-secondary mr-3 detail_btn-size"
                     >
                       P
                     </button>
                     <button
+                      onClick={() => setPrice(values.priceM)}
                       type="button"
-                      className="btn-secondary detail_btn-size mr-3"
+                      className="btn-secondary mr-3 detail_btn-size"
                     >
                       M
                     </button>
                     <button
+                      onClick={() => setPrice(values.priceG)}
                       type="button"
                       className="btn-secondary detail_btn-size"
                     >
@@ -65,7 +71,10 @@ function Detail({ values }) {
                     </button>
                   </div>
                   <h4 className="mb-3 detail_text">
-                    R$ {Number(values.priceM).toFixed(2)}
+                    {new Intl.NumberFormat("pt-BR", {
+                      style: "currency",
+                      currency: "BRL",
+                    }).format(price)}
                   </h4>
                 </div>
 
